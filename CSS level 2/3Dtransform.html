@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .cont{
+            background-color: bisque;
+            padding: 3rem;
+            gap: 2rem;
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .item{
+            height: 100px;
+            width: 250px;
+            border: 3px solid black;
+            background-color: rgb(237, 100, 210);
+            text-align: center;
+            font-size: 40px;
+        }
+        #rot-x:hover{
+            transform: rotateX(45deg);
+        }
+        #rot-y:hover{
+            transform: rotateY(45deg);
+        }
+        #rot-z:hover{
+            transform: rotateZ(45deg);
+        }
+        #trans-x:hover{
+            transform: translateX(100px);
+        }
+        #trans-y:hover{
+            transform: translateY(100px);
+        }
+        #trans-z:hover{
+            transform: perspective(300px) translateZ(-100px);
+        }
+        #scale-x:hover{
+            transform: scaleX(-1.5);
+        }
+        #scale-y:hover{
+            transform: scaleY(1.5);
+        }
+        #scale-z:hover{
+            transform: perspective(300px) scaleZ(2.2) rotateY(30deg);
+        }
+        #skew-x:hover{
+            transform: skewX(30deg);
+        }
+        #skew-y:hover{
+            transform: skewY(-30deg);
+        }
+        #skew-z:hover{
+            transform: perspective(300px) rotateX(90deg) skewZ(90deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item" id="rot-x">Rotate x</div>
+        <div class="item" id="rot-y">Rotate y</div>
+        <div class="item" id="rot-z">Rotate z</div>
+        <div class="item" id="trans-x">translate x</div>
+        <div class="item" id="trans-y">translate y</div>
+        <div class="item" id="trans-z">translate z</div>
+        <div class="item" id="scale-x">Scale x</div>
+        <div class="item" id="scale-y">Scale y</div>
+        <div class="item" id="scale-z">Scale z</div>
+        <div class="item" id="skew-x">skew-x</div>
+        <div class="item" id="skew-y">skew-y</div>
+        <div class="item" id="skew-z">skew-z</div>
+        
+    </div>
+</body>
+</html>
