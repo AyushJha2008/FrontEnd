@@ -73,13 +73,3 @@ const resetScore = () =>{
 }
 
 reset.addEventListener("click", resetScore);
-
-const matchWon = () => {
-    if(userScore==7){
-        msg.innerText = "hurray🥳🥳 you won"
-    } else if(botScore==7){
-        msg.innerText = "oops😒😒 you lost"
-    }
-}
-
-matchWon()
