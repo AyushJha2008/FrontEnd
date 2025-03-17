@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    
+    background-color: #aac8dd;
+background-image: linear-gradient(135deg, #9ab9cd 20%, #acafda 80%);
+
+}
+#navList{
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+nav{
+    width: 100%;
+    
+}
+.nav{
+    width: 100wh;
+    background-image: linear-gradient( 226.4deg,  rgba(237, 108, 88, 0.948) 28.9%, rgba(224, 164, 66, 0.943) 33%, rgba(245, 237, 75, 0.954) 48.6%, rgba(105, 245, 80, 0.92) 65.3%, rgba(77, 168, 242, 0.937) 80.6%, rgba(113,63,254,1) 100.1% );
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navLogo{
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    color: rgb(33, 1, 138);
+}
+h1{
+    font-size: 1.6rem;
+    font-style: italic;
+    color: rgb(2, 0, 100);
+    margin: auto;
+    padding: 15px;
+    border: solid 2px rgb(237, 43, 43);
+    border-radius: 20px;
+}
+#navItems{
+    display: flex;
+    gap: 30px;
+}
+.footerBox{
+    background-image: linear-gradient( 226.4deg,  rgba(237, 108, 88, 0.948) 28.9%, rgba(224, 164, 66, 0.943) 33%, rgba(245, 237, 75, 0.954) 48.6%, rgba(105, 245, 80, 0.92) 65.3%, rgba(77, 168, 242, 0.937) 80.6%, rgba(113,63,254,1) 100.1% );
+    width: 100%;           
+    text-align: center;
+    min-height: 30px;
+    font-size: 1.3rem;
+}
+.contentBox{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 3px 6px 30px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+.item{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    border-radius: 30px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    transition: all linear 0.6s 0.5s ;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 40x;
+}
+.right:hover{
+    transform: scale(1.07);
+}
+.right .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgba(107, 103, 103, 0.825);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: linear all 0.3s 0s;
+}
+.right:hover .overlay{
+    opacity: 1;
+}
+.right .overlay span{
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: 900;
+}

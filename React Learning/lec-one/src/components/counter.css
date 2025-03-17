@@ -1,0 +1,10 @@
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+    border: 2px solid black;
+    background-color: beige;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            margin-left: 5px;
+            padding: 2px;
+            border: 3px red solid;
+            display: flex;
+            background-color: darkgray;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            margin-left: 10px;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black
+        }
+
+        
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: brown;
+        }
+        #box3{
+            background-color: chartreuse;
+        }
+        #box4{
+            background-color: darkorange;
+        }
+        @media (min-width: 640px) { /*640px ++ rahega to row wise arrangement*/
+            .container{
+                flex-direction: row;
+            }
+        }
+        @media (max-width: 640px) { /* 640-- rahega to coloumn wise arrangement*/
+            .container{
+                flex-direction: column;
+            }
+        }     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    </div>
+</body>
+</html>
