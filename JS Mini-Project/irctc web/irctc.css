@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ body{
+    background-color: antiquewhite;
+    height: 100vh;
+ }
+ a{
+    font-style: normal;
+ }
+.head{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(214, 239, 248);
+}
+.head img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+}
+.nav2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+.nav{
+    /* background-color: orange; */
+    padding: 0.3rem;
+    font-weight: 900;
+    color: black;
+    font-size: larger;
+}
+
+.nav:hover{
+    border: 2px solid black;
+    color: blue;
+}
+.left img{
+    height: 9rem;
+    width: 9rem;
+}
+.left{
+    display: grid;
+    gap: 1rem;
+    padding-top: 1rem;
+    border: 3px solid lightskyblue;
+    height: 100%;
+
+}
+.body-container{
+    background-image: url(vande-bharat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
