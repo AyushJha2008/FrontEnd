@@ -1,4 +1,4 @@
-const endDate = new Date("17 march, 2025 00:00:00").getTime();
+const endDate = new Date("03 april, 2025 21:59:00").getTime();
 const startDate = new Date().getTime();
 
 let x = setInterval(function updateTimer() {

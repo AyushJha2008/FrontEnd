@@ -3,20 +3,32 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from './components/dashboard';
 import Home from './components/home';
 import About from './components/about';
+import Navbar from './components/Navbar';
 
 const router = createBrowserRouter(
   [
     {path:"/",
       element:
-       <Home/>
+      <div>
+        <Navbar/>
+        <Home/>
+      </div>
     },
     {
-      paht:"/about",
-      element: <About/>
+      path:"/about",
+      element:
+      <div>
+        <Navbar/>
+        <About/>
+      </div>
     },
     {
       path:"/dashboard",
-      element: <Dashboard/>
+      element:
+      <div>
+        <Navbar/>
+        <Dashboard/>
+      </div>
     }
   ]
 )
