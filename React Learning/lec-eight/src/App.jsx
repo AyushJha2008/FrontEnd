@@ -14,23 +14,23 @@ const router = createBrowserRouter(
         <Home/>
       </div>
     },
-    {
-      path:"/about",
+
+    {path:"/about",
       element:
       <div>
         <Navbar/>
         <About/>
       </div>
     },
-    {
-      path:"/dashboard",
+
+    {path:"/dashboard",
       element:
       <div>
         <Navbar/>
         <Dashboard/>
       </div>
     }
-  ]
+  ]  
 )
 function App() {
   
