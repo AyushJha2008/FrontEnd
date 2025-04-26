@@ -1,34 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useRef, useState } from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// function App() {
+//   const [count, setCount] = useState(0)
+//   let val = useRef(0);
+
+//   let btnRef = useRef();
+
+//   function handleInc(){
+//     val.current = val.current + 1
+//     console.log("value of val:", val.current);
+//     setCount(count+1)
+//   }
+//   useEffect(()=>{console.log("iam rendering again");})
+
+//   function changeCol(){
+//     btnRef.current.style.backgroundColor = 'red';
+//   }
+
+//   return (
+//     <div>
+//       <button ref={btnRef} onClick={handleInc}>+</button> <br /> <br />
+//       <button onClick={changeCol}>change color of +</button> <br /> <br />
+//       <div>count: {count}</div>
+//     </div>
+//   )
+// }
+
+function App(){
+  const[time, setTime] = useState(0);
+
+  let timeRef = useRef(null);
+
+  function startTimer() {
+    timeRef.current = setInterval(()=>{
+      setTime(time => time+1)
+    }, 1000)
+  }
+
+  function stopTimer() {
+    clearInterval(timeRef.current);
+    timeRef.current = null;
+  }
+  function resetTimer() {
+    stopTimer();
+    setTime(0);
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <h1>Stopwatch: {time} seconds</h1>
+      <button onClick={startTimer}> Start </button> <br /> <br />
+      <button onClick={stopTimer}> stop </button> <br /> <br />
+      <button onClick={resetTimer}>reset</button>
+    </div>
   )
 }
 
