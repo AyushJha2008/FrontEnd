@@ -1,10 +1,12 @@
 import React from 'react'
-import './Home.css'
+import Home from './pages/Home/Home'
 
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Home/>
+    </div>
   )
 }
 
