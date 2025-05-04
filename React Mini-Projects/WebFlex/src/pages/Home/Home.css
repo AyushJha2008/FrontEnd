@@ -1,6 +1,12 @@
+.home{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 .hero{
-    /* width: 10; */
     position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 .banner-img{
     width: 100%;
@@ -16,10 +22,47 @@
 }
 .caption-img{
     width: 90%;
-    max-width: 380px;
+    max-width: 350px;
     margin-bottom: 1px;
 }
 .hero-caption p{
-    max-width: 600px;
+    max-width: 500px;
     font-size: 15px;
+}
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 1rem;
+
+}
+.btn{
+    border: 0;
+    outline: 0;
+    padding: 1px;
+    padding-right: 9px;
+    padding-left: 2px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f98db1;
+    color: #0b0c2a ;
+    font-weight: 700;
+}
+.btn img{
+    height: 2rem;
+    width: 2rem;
+}
+.dark-btn{
+    /* background-color: #0b0c2a; */
+    background-color: #6d6d6eb3;
+    color: white;
+}
+.btn:hover{
+    background-color: #f9aac4;
+}
+.dark-btn:hover{
+    background-color: #6d6d6e66;
 }

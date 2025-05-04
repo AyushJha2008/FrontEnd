@@ -1,0 +1,32 @@
+.titleCards{
+    height: 100vh;
+    scroll-snap-align: start;
+    padding-top: 4rem;
+}
+.titleCards h2{
+    padding: 1.5rem 1rem;
+    color: rgb(243, 161, 175);
+    font-weight: bolder;
+}
+.cardList{
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 10px;
+    /* place-items: center; */
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.cardList img{
+    width: 240px;
+    height: 340px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card{
+    position: relative;
+}
+.card p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
