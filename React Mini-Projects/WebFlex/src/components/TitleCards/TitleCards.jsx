@@ -10,7 +10,7 @@ const TitleCards = () => {
         {cards_data.map((card, index)=>{
           return <div className="card" key={index}>
             <img src={card.image} />
-            <p>{card.name}</p>
+            <div className='pName'><p>{card.name}</p></div>
           </div>
         })}
       </div>
