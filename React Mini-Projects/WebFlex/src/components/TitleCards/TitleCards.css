@@ -1,24 +1,22 @@
 .titleCards{
-    height: 100vh;
     scroll-snap-align: start;
-    padding-top: 4rem;
 }
 .titleCards h2{
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     color: rgb(243, 161, 175);
     font-weight: bolder;
 }
 .cardList{
     display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 10px;
-    /* place-items: center; */
     overflow: scroll;
     scrollbar-width: none;
+    margin-left: 22px;
+    margin-right: 22px;
 }
 .cardList img{
-    width: 240px;
-    height: 340px;
+    width: 200px;
+    height: 300px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -29,9 +27,13 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: #eaeaeb;
+    color: #000000;
+    background-color: rgb(248, 127, 147);
+    height: 25px;
+    padding: 3px 5px;
+    margin-bottom: 15px;
+    font-weight: 800;
 }
-pName{
-    height: 15px;
-    background-color: rgb(227, 131, 147);
+.pName{
+    padding: 5px;
 }
