@@ -14,6 +14,20 @@ const Footer = () => {
         <img src={githubIcon} />
         <img src={twitter_icon} />
       </div>
+      <ul>
+        <li>Audio desc</li>
+        <li>Help centre</li>
+        <li>Gift card</li>
+        <li>Media centre</li>
+        <li>Investor Realation</li>
+        <li>Jobs</li>
+        <li>Terms & conds</li>
+        <li>Privacy</li>
+        <li>Legal notice</li>
+        <li>Cookies</li>
+        <li>contact us</li>
+      </ul>
+      <p className='copy-text'>1997-2025 WebFlex, Inc.</p>
     </div>
   )
 }
